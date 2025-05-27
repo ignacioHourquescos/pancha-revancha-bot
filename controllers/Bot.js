@@ -89,7 +89,7 @@ class BotController {
 							});
 
 							// Aquí puedes agregar la lógica para responder mensajes
-							await this.handleIncomingMessage(from, messageText);
+							//await this.handleIncomingMessage(from, messageText);
 						}
 					}
 				}
