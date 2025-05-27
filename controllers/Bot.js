@@ -102,18 +102,18 @@ class BotController {
 		}
 	}
 
-	async handleIncomingMessage(from, message) {
-		try {
-			// Ejemplo básico de respuesta
-			if (message.toLowerCase() === "hola") {
-				await this.sock.sendMessage(from, {
-					text: "¡Hola! Soy el bot de Revancha. ¿En qué puedo ayudarte?",
-				});
-			}
-		} catch (error) {
-			console.error("Error al manejar mensaje:", error);
-		}
-	}
+	// async handleIncomingMessage(from, message) {
+	// 	try {
+	// 		// Ejemplo básico de respuesta
+	// 		if (message.toLowerCase() === "hola") {
+	// 			await this.sock.sendMessage(from, {
+	// 				text: "¡Hola! Soy el bot de Revancha. ¿En qué puedo ayudarte?",
+	// 			});
+	// 		}
+	// 	} catch (error) {
+	// 		console.error("Error al manejar mensaje:", error);
+	// 	}
+	// }
 
 	// Método para enviar mensajes desde otras partes de la aplicación
 	async sendMessage(to, message) {
